@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +18,9 @@
         <div class="nav">
                 <a href="add_book_page.php"><button>Добавить книгу</button></a>
                 <div>
-                    <input type="text">
+                    <input type="text" placeholder="Поиск по названию...">
                     <select name="" id="">
-                        <option value=""></option>
+                        <?include "php/get_genres.php"?>
                     </select>            
                 </div>
             </div>

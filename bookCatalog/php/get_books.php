@@ -21,9 +21,11 @@ foreach($books as $book){
         <p><?=$book["genre"]?></p>
         <p><?=$book["status"]?></p>
         <p><?=$book["current_page"]?>/<?=$book["pages"]?></p>
-        <form action="php/delete_book.php">
-            <input type="submit" value="Удалить">
-        </form>            
+        <form action="php/get_book_info.php">
+            <input type="hidden" value="<?=$book["id"]?>" name="book_id">
+            <input type="submit" value="Изменить">
+        </form>
+
     </div>
 <?}
 
